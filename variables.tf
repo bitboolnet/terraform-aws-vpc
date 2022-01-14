@@ -1,3 +1,9 @@
+variable "public_subnet_gateway_interface" {
+  description = "Controls if public subnect uses an interface as gateway"
+  type        = string
+  default     = ""
+}
+
 variable "create_vpc" {
   description = "Controls if VPC should be created (it affects almost all resources)"
   type        = bool
